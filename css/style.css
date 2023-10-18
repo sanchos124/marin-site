@@ -1,0 +1,8 @@
+*{
+    box-sizing: border-box;
+}
+
+.center {
+    padding-right: calc(50vw - 563px);
+    padding-left: calc(50vw - 563px);
+}
