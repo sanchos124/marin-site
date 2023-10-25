@@ -67,6 +67,63 @@
                     </a>    
                 </article>
             </section>
+            <style>
+                .register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.register__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+}
+
+.register__input,
+.register__textarea {
+  width: 100%;
+  padding: 10px;
+}
+
+.register__textarea {
+  grid-column: 2 / 3; /* Занимает две колонки */
+  grid-row: 1 / 4;
+}
+
+.register__checkbox {
+    grid-column: 1 / 3;
+  align-self: center;
+}
+
+.form__submit {
+  grid-column: span 2; /* Занимает две колонки */
+  margin-top: 10px;
+}
+
+            </style>
+            <section class="register center">
+                <h2 class="register__title">Записаться на прием</h2>                
+                <form class="register__form">
+                        <input type="text" id="name" name="name" class="register__input" placeholder="Ваше имя *" required>
+                        <input type="tel" id="phone" name="phone" class="register__input" placeholder="Ваш телефон *" required>
+                        <input type="text" id="topic" name="topic" class="register__input" placeholder="Тема встречи *" required>
+                        <textarea id="comments" name="comments" class="register__textarea" placeholder="Пожелания"></textarea>
+                        
+                        <div class="register__checkbox">
+                            <input type="checkbox" id="privacy" name="privacy" class="register__check" required>
+                            <label for="privacy" class="register__label">Я согласен с политикой конфиденциальности</label>
+                        </div>
+
+                    <button type="submit" class="form__submit">Отправить</button>
+                </form>
+            </section>
         </main>
     </body>
 </html>
