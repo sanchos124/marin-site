@@ -85,9 +85,11 @@
                         
                         <textarea id="comments" name="comments" class="register__input register__input-textarea" placeholder="Пожелания"></textarea>
                         
-                    <div class="register__checkbox">
-                        <input type="checkbox" id="privacy" name="privacy" class="register__check" required>
-                        <label for="privacy" class="register__label">Я согласен с политикой конфиденциальности</label>
+                    <div class="register__chekblock">
+                        <label class="register__checkbox">
+                            <input type="checkbox" id="privacy" name="privacy" class="register__check visually-hidden" required>
+                            <span class="register__label">Я согласен с политикой конфиденциальности</span>
+                        </label>
                     </div>
 
                     <button type="submit" class="btn register__btn">Отправить</button>
