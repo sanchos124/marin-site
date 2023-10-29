@@ -73,15 +73,16 @@
                 <form class="register__form">
                     <input type="text" id="name" name="name" class="register__input" placeholder="Ваше имя *" required>
                     <input type="tel" id="phone" name="phone" class="register__input" placeholder="Ваш телефон *" required>
-                    
-                    
-                        <select id="topic" name="topic" class="register__input register__input-select" placeholder="Ваш телефон *"  required>
-                            <option value="" disabled selected>Выберите тему встречи *</option>
-                            <option value="option1">Тема 1</option>
-                            <option value="option2">Тема 2</option>
-                            <option value="option3">Тема 3</option>
-                        </select>
 
+                        <label class="register__input register__input-select">
+                            <select name="topic" required>
+                                <option value="" disabled selected>Выберите тему встречи *</option>
+                                <option value="option1">Тема 1</option>
+                                <option value="option2">Тема 2</option>
+                                <option value="option3">Тема 3</option>
+                            </select>
+                        </label>
+                        
                         <textarea id="comments" name="comments" class="register__input register__input-textarea" placeholder="Пожелания"></textarea>
                         
                     <div class="register__checkbox">
