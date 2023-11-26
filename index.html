@@ -12,6 +12,7 @@
                 <img src="images/header_logo.svg" alt="logo">
             </a>
             <nav class="nav">
+                <input type="checkbox" id="open_menu" class="visually-hidden">
                 <ul class="nav__list">
                     <li class="nav__item">
                         <a href="#" class="nav__link nav__link_active">Главная</a>
@@ -26,6 +27,9 @@
                         <a href="#" class="nav__link">Блог</a>
                     </li>
                 </ul>
+                <label for="open_menu" class="nav__toggler">
+                    <div class="nav__hamburger"><span></span><span></span><span></span></div>
+                </label>
             </nav>
         </header>
         <main >            
@@ -213,8 +217,8 @@
                 <h3 class="appointmen__title">Записаться со скидкой 50 грн</h3>
                 <form class="form appointmen__form">
                     <div class="appointmen__container">
-                        <input type="text" id="name" name="name" class="form__input appointmen_input" placeholder="Ваше имя *" required>
-                        <input type="tel" id="phone" name="phone" class="form__input appointmen_input" placeholder="Ваш телефон *" required>
+                        <input type="text" id="name" name="name" class="form__input appointmen__input" placeholder="Ваше имя *" required>
+                        <input type="tel" id="phone" name="phone" class="form__input appointmen__input" placeholder="Ваш телефон *" required>
                         <button type="submit" class="btn appointmen__btn">Записаться со скидкой</button>
                     </div>
                     <div class="form__chekblock appointmen__chekblock">
@@ -229,21 +233,23 @@
                 <a href="#" class="logo footer__logo">
                     <img src="images/header_logo.svg" alt="logo">
                 </a>
-                <div class="footer__item">
-                    <img src="images/inst.svg" alt="">
-                    <a href="https://www.instagram.com/phyholog_sergei/" target="_blank" class="footer__link">@phyholog_sergei</a>
-                </div>
-                <div class="footer__item">
-                    <img src="images/viber.svg" alt="">
-                    <a href="viber://chat?number=+380991234567" target="_blank" class="footer__link">+380 99 123 45 67</a>
-                </div>
-                <div class="footer__item">
-                    <img src="images/telegram.svg" alt="">
-                    <a href="https://t.me/phyholog_sergei" target="_blank" class="footer__link">@phyholog_sergei</a>
-                </div>
-                <div class="footer__item">
-                    <img src="images/tel.svg" alt="">
-                    <a href="tel:+380991234567" class="footer__link">+380 99 123 45 67</a>
+                <div class="footer__items">
+                    <div class="footer__item">
+                        <img src="images/inst.svg" alt="">
+                        <a href="https://www.instagram.com/phyholog_sergei/" target="_blank" class="footer__link">@phyholog_sergei</a>
+                    </div>
+                    <div class="footer__item">
+                        <img src="images/viber.svg" alt="">
+                        <a href="viber://chat?number=+380991234567" target="_blank" class="footer__link">+380 99 123 45 67</a>
+                    </div>
+                    <div class="footer__item">
+                        <img src="images/telegram.svg" alt="">
+                        <a href="https://t.me/phyholog_sergei" target="_blank" class="footer__link">@phyholog_sergei</a>
+                    </div>
+                    <div class="footer__item">
+                        <img src="images/tel.svg" alt="">
+                        <a href="tel:+380991234567" class="footer__link">+380 99 123 45 67</a>
+                    </div>
                 </div>
             </footer>
         </main>
